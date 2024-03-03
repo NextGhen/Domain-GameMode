@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*
+.panel{
+    display: block;
+    width: 6em;
+    height: 1em;
+    padding: .1em;
+    background: #782424;
+    border: 1em #540202;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: #fff;
+    font-size: 25px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+
+} 
+*/
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #00fffc;
+}
+.button {
+    color: var(--clr);
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-transform: uppercase;
+    
+}
+.button:hover {
+    color: #00fffc;
+    animation-name: pulse;
+    animation-duration: 0.75s;
+}
+
+@keyframes pulse {
+    0% {transform: scale(0.8);
+    background-color: #0e3bc0;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+    }
+    50% {transform: scale(0.9);
+    background-color: #00fffc;
+    box-shadow: 0 0 0 5px rgba(178, 212, 252, 0.325);
+    }
+    100% {transform: scale(0.8);
+    background-color: #0e3bc0;
+    box-shadow: 0 0 0 0 rgb(18, 55, 97);
+    }
+
+}
+
+
+
+.shake {
+    animation-name: shake;
+    animation-duration: 0.75s;
+}
+    @keyframes shake {
+        0% {transform: translateX(0);}
+        20% {transform: translateX(-10px);}
+        40% {transform: translateX(10px);}
+        60% {transform: translateX(-10px);}
+        80% {transform: translateX(10px);}
+        100% {transform: translateX(0);}
+
+    }
+
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    @keyframes bounce {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-10px);}
+        100% {transform: translateY(0);}
+    }
+
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+
+.slide-in {
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+    @keyframes slideIn {
+        from {transform: translateX(-100%);}
+        to {transform: translateX(0);}
+    }

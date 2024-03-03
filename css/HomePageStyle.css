@@ -1,0 +1,22 @@
+@charset "utf-8";
+body { background-image: url('../images/Background.png');}
+
+/*
+
+menu {list-style-type: none;}
+    menu li {display: block}
+    menu li a {display: block;
+        width: 6em;
+        background: #6a7758;
+        border: .1em solid #2A3433;
+        padding: .1em;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: none;}
+    a:link, a:visited {color: #fff;}
+    a:hover, a:active, a:focus {color: #2a3433}
+    .floatright {float: right;}
+    .lqdimg {width: 100%;
+        height: auto;
+        border: .1em solid #2A3433;}
+        */

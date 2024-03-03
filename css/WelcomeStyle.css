@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import url("ButtonStyle.css");
+body {
+    background-image: url("../images/Background.png"); 
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup::before {
+    animation-name: fade-in-out;
+    animation-duration: 5s;
+}
+    @keyframes fade-in-out{
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+.contentBox {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    border-radius: .2em;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBox .headerImgText {
+    position: absolute;
+    top: 0;
+}
+
+.contentBox .content {
+    position: absolute;
+    top: 50%;
+}
+
+/* Button Style */
+.proceed {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    top: 30%;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.proceed:hover {
+    background: #fff;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 20px #a60736;
+}
+
+.proceed:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #062d7f;
+}
+
+.proceed span {
+    position: relative;
+    z-index: 1;
+}
+
+.proceed i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.proceed i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #062d7f;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.proceed:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.proceed i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: #062d7f;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.proceed:hover i::after {
+    width: 20px;
+    right: 20%;
+}
+
